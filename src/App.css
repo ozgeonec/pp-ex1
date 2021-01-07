@@ -1,38 +1,200 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: "OpenSans", sans-serif;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.first {
+  border-bottom: 1px solid #e4e4e4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.pic {
+  position: relative;
+
+}
+.pic-img {
+  width: 40px;
+  height: 40px;
+  margin: 12px 9px 4px 15px;
+  object-fit: contain;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.oval-white {
+  position: absolute;
+  display: flex;
+  width: 11px;
+  height: 11px;
+  top: 40px;
+  left: 43px;
+  border-radius: 5px;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.oval {
+  position: inherit;
+  width: 7px;
+  height: 7px;
+  box-shadow: 0 0 4px 0 #2fa73f;
+  border: solid 1px #2fa73f;
+  background-color: #45bf55;
+  border-radius: 5px;
+  z-index: 1;
+}
+.oval.yellow {
+  color: #dfbb07;
+  box-shadow: 0 0 4px 0  #dfbb07;
+  border: solid 1px #dfbb07;
+  background-color: #ffd400;
+}
+.person{
   display: flex;
   flex-direction: column;
+}
+.name {
+  font-weight: bold;
+  color: #000;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.time {
+  font-size: 11px;
+  color: #666666;
+}
+.dots {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin: 0 20px 12px auto;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  font-size: 12px;
+  padding: 4px 0 8px 15px;
+}
+.bold {
+  font-weight: bold;
+}
+.post hr {
+  height: 1px;
+  margin: 0 11px 7px 15px;
+  border: 1px solid #efefef;
+  max-width: 100%;
+}
+
+.action {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 15px;
+  padding-bottom: 8px;
+}
+.action p {
+  font-size: 18px;
+  font-weight: 300;
+  padding-right: 5px;
+}
+.div-img {
+  display: flex;
+  flex-direction: row;
+  column-gap: 18px;
+}
+.div-img img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.second {
+  border-bottom: 1px solid #e4e4e4;
+}
+.post-img {
+  max-width: 100%;
+  height: auto;
+}
+.circles {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  column-gap: 9px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.circle {
+  width: 6px;
+  height: 6px;
+  background-color: #e4e4e4;
+  border-radius: 99px;
+}
+.circle1 {
+  width: 6px;
+  height: 6px;
+  background-color: #48a9d7;
+  border-radius: 99px;
+}
+.third {
+  border-bottom: 1px solid #e4e4e4;
+}
+.interaction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 11px;
+  padding-left: 15px;
+  column-gap: 3px;
+  margin-bottom: 7px;
 }
 
-.App-link {
-  color: #61dafb;
+.interaction img {
+  width: 14px;
+  height: 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.interaction p {
+  color: #666;
+}
+.fifth{
+  border-bottom: 1px solid #e4e4e4;
+}
+.sixth {
+  border-bottom: 1px solid #e4e4e4;
+}
+.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.show-more {
+  width: 300px;
+  height: 40px;
+  margin-top: 39px;
+  margin-bottom: 39px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  padding: 10px 112px 10px 37px;
+  border: solid 1px #e4e4e4;
+  font-size: 14px;
+}
+.arrow {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  margin-right: auto;
 }
